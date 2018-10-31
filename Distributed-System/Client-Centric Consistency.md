@@ -30,8 +30,9 @@ Tight한 정책일수록, 자연스레 일관성을 유지하기위한 시스템
 [조건]
  1. write 작업이 거의 일어나지 않고, 대부분이 read 작업이 대부분인 경우
  2. 동시에 write가 거의 일어나지 않는 경우
-- Database System
-- Web Cache Server, Browser Cache
+[예시]
+ - Database System
+ - Web Cache Server, Browser Cache
 ~~~
 
 하지만, 클라이언트가 동일한 **Replica**에 항상 접근하는 경우에 **_Eventual Consistency_** 유지할 수 있지만, 클라이언트가 여러 **Replica**에 접근하게 되는 경우에 유지할 수 없게 된다. 이런 경우 추가적인 조치를 통해 일관성을 유지할 수 있는데 추가사항은 다음과 같다.
