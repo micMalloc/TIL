@@ -19,7 +19,9 @@ Tight한 정책일수록, 자연스레 일관성을 유지하기위한 시스템
 
 **_Eventual Consistency_**<br/>
 
-일관성 유지가 크리티컬하지 않은 시스템에서, 시스템 전체 데이터 일관성을 맞추기보다 각각의 특정한 클라이언트의 일관성을 맞추는 정책
+일관성 유지가 크리티컬하지 않은 시스템에서, 시스템 전체 데이터 일관성을 맞추기보다 각각의 특정한 클라이언트의 일관성을 맞추는 정책.
+
+일정한 주기에 따라 일관성 유지 작업 실행함.
 
 > *Client-centric consistency model is to avoid __system wide consistency__* by __concentrating on what specific client want__, instead of what should be maintained bt server.
 
@@ -53,6 +55,8 @@ Tight한 정책일수록, 자연스레 일관성을 유지하기위한 시스템
 <br/>
 
 #### 추가조건 설명
+
+기본적으로 내가 이전의 했던 작업에 대해 보장이 되어야한다.
 
 * **Monotonic Read**
 
