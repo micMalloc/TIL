@@ -46,6 +46,8 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 
     **Availabilty** = MTTF / MTBF x 100 (%)
 
+    ![MTBF](https://user-images.githubusercontent.com/22839766/48061997-08315f00-e204-11e8-999d-f0056e24ba3a.png)
+
     <br/>
 
 - ***Failure*** : 원하지 않는 결과가 리턴되거나 응답하지 않은 상태를 뜻함
