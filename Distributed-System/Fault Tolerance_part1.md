@@ -42,12 +42,11 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 
     ​				유지관리성이 높으면 그만큼 가용성 역시 높아진다. 복구가 빨리 될 수록 그 만큼 더 사용가능하기 때문이다.  복구하는데까지 걸리는 평균 시간 - **Mean Time To Repair**(MTTR)
 
-    **Mean Time Between Failure(MTBF)** = MTTF + MTTR
+    **Mean Time Between Failure(MTBF)** = MTTF + MTTR	
 
+    **Availabilty** = MTTF / MTBF x 100 (%)
 
-![image-20181106201001472](/Users/heesu.lee/Library/Application Support/typora-user-images/image-20181106201001472.png)
-
-​		**Availabilty** = MTTF / MTBF x 100 (%)
+    <br/>
 
 - ***Failure*** : 원하지 않는 결과가 리턴되거나 응답하지 않은 상태를 뜻함
 
@@ -66,6 +65,8 @@ Fault Tolerance의 기본적으로 쓰이는 개념
   - **Transient Fault** : 일회성 / 한 번만 발생한 경우
   - **Intermittent Fault** : 비주기적으로 발생한 경우 / 디텍션 or 트랙킹하기 어려움
   - **Permanent Fault** : 한번 발생 후 계속 발생하는 경우
+
+  <br/>
 
 - ***Failure Models*** 
 
