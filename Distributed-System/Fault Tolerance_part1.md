@@ -46,7 +46,7 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 
     **Availabilty** = MTTF / MTBF x 100 (%)
 
-    ![MTBF](https://user-images.githubusercontent.com/22839766/48061997-08315f00-e204-11e8-999d-f0056e24ba3a.png)
+    ![MTBF](https://user-images.githubusercontent.com/22839766/48064160-67926d80-e20a-11e8-96eb-bbacdd50c622.png)
 
     <br/>
 
@@ -73,3 +73,56 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 - ***Failure Models*** 
 
   여러 실패 종류
+
+  - **Crash failures** : 더 이상 동작하지 않은 상태 / 재부팅을 통해 해결가능
+
+  - **Omission failures** : 들어온 요청을 응답하지 않고 생략되거나 뛰어넘게 되는 상태
+
+    - Recevie omission : 요청을 받아드리지 못한 상태 / 서버의 버퍼가 가득차서 요청 받지 못한 경우
+    - Send omission : 요청에 응답하였지만 받지 못한 상태 / 서버가 응답 보냈는데 os 버퍼가 가득차 받지 못한 경우
+
+  - **Timing failures** : 응답시간 너무 늦어져서 실패로 간주된 경우
+
+  - **Response failures** : 잘못된 결과를 응답하는 경우
+
+    - Value failure : 요청은 재대로 왔지만, 잘못된 값을 찾은 경우
+    - State transition failure : 잘못된 요청을 수신하고, 그것을 실행하다 요청이 잘못된 상태로 전환되는 경우
+
+  - **Arbitary(Byzantine) failures** : 항상 그러는 것이 아니라 잘못된 값이 비주기적으로 애매하게 발생하는 경우
+
+    ​							***Arbitary responses, Arbitary times***
+
+    <br/>
+
+- Main Approach for ***Fault Tolerance***
+
+  ***Redundancy*** : 기본적으로 데이터 혹은 프로세스 자체를 중복시켜 해결한다.
+
+  - **Information Redundancy** : 주고받는 정보 속에 중복된 데이터를 넣어 복구시킨다.
+
+  - **Time Redundancy** : 동일한 내용의 정보를 다시 보낸다.
+
+  - **Physical Redundancy** : 동일한 작업을 수행하는 **Software(Process)** 나 **Hardware**를 여러개 중복시킨다.
+
+    <br/>
+
+- ***Process Resilience***
+
+  프로세스들을 그룹 내에서 복제시켜 프로세스의 손실 혹은 실패를 보호하고 회복한다.
+
+  - **Group Organization**
+
+    - **Flat Group** : Coordinator가 존재하지 않고 모두 동일한 작업을 수행하게 된다.
+
+      동일한 작업을 모두 수행하기 때문에 하나가 망가지더라도 전체 그룹에 큰 영향 끼치지 않는다.
+
+      하지만, 일 처리 효율성은 떨어진다.
+
+    - **Hierarchical Group** : **Coordinator**가 존재하여 프로세스들간의 업무 배정을 진행한다.
+
+      동일한 작업을 모두 똑같이 수행하는 것이 아니라 업무를 배정하기 때문에 효율성은 높아진다.
+
+      그렇지만, 그에 비해 Coordinator가 다운될 시 전체 그룹이 다운될 수 있기에 위험성이 높다.
+
+      Coordinator 실패시 Election을 통해 다시 선정한다. - Bully & Ring
+
