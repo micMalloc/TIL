@@ -27,7 +27,7 @@
 누구에 의해서, 언제, 어떻게 되는지에 따라 그 유형이 나뉘어짐
 
 * **_Static Replication_**
-  - **Permanent Replica**
+  - **Permanent Replica** : Intial Set of Replica / Mirroring Sites 초기 복제 데이터 셋
 * **_Dynamic Replication_**
-  - **Server-initiated Replica**
+  - **Server-initiated Replica** : 
   - **Client-initated Replica**
