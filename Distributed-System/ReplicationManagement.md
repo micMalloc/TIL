@@ -6,7 +6,7 @@
 
 <br/><br/>
 
-####**Replication Mangement** 의 핵심 두가지
+### **Replication Mangement** 의 핵심 두가지
 
 * **_Content Placement_**
 
@@ -22,7 +22,7 @@
 
   <br/><br/>
 
-#### Replication의 유형
+### Replication의 유형
 
 누구에 의해서, 언제, 어떻게 되는지에 따라 그 유형이 나뉘어짐
 
@@ -40,7 +40,7 @@
 
 <br/>
 
-##### Dynamic Replication : Server-Initiated replicas
+### Dynamic Replication : Server-Initiated replicas
 
 **접근 횟수**에 따라 적재적소하게 복제되고 삭제되며 운영된다.
 
@@ -57,7 +57,7 @@
 
 <br/>
 
-##### Client-initiated replicas - Client cache
+### Client-initiated replicas - Client cache
 
 복제 및 일관성 유지는 오로지 Client에 의해 운영된다.
 
@@ -69,4 +69,3 @@
   * Bandwidth & Processing power : Propagate the **update operation**
 
 <br/><br/>
-
