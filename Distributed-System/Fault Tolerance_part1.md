@@ -108,6 +108,8 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 
 - ***Process Resilience***
 
+  ***Resilience : 회복 탄련성***
+
   프로세스들을 그룹 내에서 복제시켜 프로세스의 손실 혹은 실패를 보호하고 회복한다.
 
   - **Group Organization**
