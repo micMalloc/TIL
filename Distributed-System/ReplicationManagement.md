@@ -132,4 +132,20 @@
 
   * ***Quorum-based protocols***
 
+    읽기 혹은 쓰기 위해 각각 다른 복제된 서버로부터 허가를 얻어야하는 프로토콜이다.
+
+    Need ***premission*** from multiple replica servers for file ***read*** or file ***write***
+
+    - 용어
+
+      - ***N*** 복제된 서버의 개수
+
+      - ***Read quor*um** : 읽기 작업을 수행하기 위한 허가의 수 ***N(R)***
+
+        N(R) + N(W) > N prevent read / write conflict
+
+      - ***Write quoru*m** : 쓰기 작업을 수행하기 위한 허가의 수 ***N(W)***
+
+        N(W) > N / 2 prevent write / write conflict
+
 * ***Client-centic consistency***
