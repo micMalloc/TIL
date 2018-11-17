@@ -77,3 +77,59 @@
   - ***Pulling updates*** : Client initiated approach / 클라이언트의 요청에 의해 서버로부터 수정된 데이터를 가져온다.
 
 <br/><br/>
+
+###  ***Consistency Protocols***
+
+실제 일관성을 맞추기 위해 어떠한 방식들이 있는지에 대해 논의
+
+***분류***
+
+* ***Data-centric consistency***
+
+  * ***Primary-Backup protocols***
+
+    * 모든 ***write oper*ation**는 ***primary se*rver**에서 처리되야한다.
+
+      All ***write operation*** need to be forwarded to the ***fixed primary server***
+
+    * **Process**
+
+      1. Write request
+      2. Forward write request to the primary server
+      3. ( Write request is operated at the primary server )
+      4. Tell backup servers to update
+      5. Acknowledge update to primary server
+      6. Acknowledge write is completed to client
+
+    * ***Drawback***
+
+      * Client is blocked until all process is completed
+
+      * Non - Blocking approach : Return modified data when write request is operated at the primary server
+
+      * Consistency Problem
+
+        When using Non - bloking approach is used, Consistency problem may be caused.
+
+  * ***Primary-based protocols : Local-Write protocols***
+
+    * ***Update*** 가 요청된 지점으로 프라이머리 서버를 ***이주***시킨다.
+
+      Primary ***migrates*** to the process wanting to perform an update
+
+    * **Process**
+
+      1. Write request
+      2. Move item x to new primary server
+      3. Perfrom update
+      4. Acknowledge write completed
+      5. Tell backups to update
+      6. Acknowledge update
+
+    * ***Drawback*** : Consistency Problem
+
+      Sequential, tight consistency may not be satisfied
+
+  * ***Quorum-based protocols***
+
+* ***Client-centic consistency***
