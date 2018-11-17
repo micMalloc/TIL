@@ -54,7 +54,7 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 
   하나 이상의 서비스가 제공되지 않은 상태 (잘못된 결과값 or 응답자체 x)
 
-  - **Error** : 실패를 야기시키는 시스템의 일부분
+  - **Error** : 실패(Failure)를 야기시킬 수 있는 시스템 상태
 
   - **Fault** : Error의 원인
 
@@ -66,7 +66,7 @@ Fault Tolerance의 기본적으로 쓰이는 개념
 
   - **Transient Fault** : 일회성 / 한 번만 발생한 경우
   - **Intermittent Fault** : 비주기적으로 발생한 경우 / 디텍션 or 트랙킹하기 어려움
-  - **Permanent Fault** : 한번 발생 후 계속 발생하는 경우
+  - **Permanent Fault** : 한번 발생한 후 교체(Replacement) / 수리(Repair) 하지않을 시 계속 발생
 
   <br/>
 
