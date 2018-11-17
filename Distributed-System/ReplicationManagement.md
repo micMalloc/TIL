@@ -61,11 +61,19 @@
 
 복제 및 일관성 유지는 오로지 Client에 의해 운영된다.
 
-***Content Distribution*** Propagation of (updated) content to relevant replica server
+### ***Content Distribution*** 
+
+***Propagation*** of (updated) content to ***relevant*** replica server
+
+(수정된) 내용물을 ***연관된 복제 서버***로 전달하는 것을 의미한다.
 
 * ***Available Bandwidth & Read-Write Ratio*** 이 두가지에 따라 어떻게 복제될지 결정된다.
   * Ratio 높을 시 : Transfer the **modified files** 수정된 파일 자체를 보낸다. - ***Pushing Updates*** by Server
   * Ratio 낮을 시 : Propagate the **invalidation** of update 수정되었음을 알린다. - ***Pulling Updates*** by Client
   * Bandwidth & Processing power : Propagate the **update operation**
+
+- ***Read-Update Ratio***
+  - ***Pushing updates*** : Server initiated approach / 요청에 관계없이 수정될 시 수정된 데이터를 전달한다.
+  - ***Pulling updates*** : Client initiated approach / 클라이언트의 요청에 의해 서버로부터 수정된 데이터를 가져온다.
 
 <br/><br/>
