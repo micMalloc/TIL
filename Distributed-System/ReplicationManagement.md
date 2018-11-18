@@ -32,7 +32,7 @@
   - **Server-initiated Replica**
     - Server-initiated replica는 전체 시스템의 성능을 높이기 위해 생성된다.
     - Server-initiated replica는 주로 clients가 집중된 곳에 위치된다.
-    - 어느 위치에 복제시킬지 결정하기 위해 Dynamic replication 알고리즘이 적용된다.
+    - 어느 위치에 복제시킬지 결정하기 위해 Server-Initiated Replica 알고리즘이 적용된다.
     - 예) Content Distributed Network(**CDN**), Reverse Proxy Server
   - **Client-initiated Replica** - *Client Cache*
     - Client-initiated replica는 client들의 access time을 줄이기 위해 생성된다.
