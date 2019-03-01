@@ -43,7 +43,7 @@
 
 - 표
 
-  ![비트연산](/Users/heesu.lee/Desktop/비트연산.png)
+  ![비트연산](https://user-images.githubusercontent.com/22839766/53630446-71c1f700-3c53-11e9-8e97-d3b08ff7a5ed.png)
 
 ----
 
