@@ -41,14 +41,14 @@
 
 void bubble_sort (int list[MAX]) {
   	
-  	for (int i = MAX - 1; i > 0; -- i) {
+  for (int i = MAX - 1; i > 0; -- i) {
     	/* Ascending order */	
         for (int j = 0; j < i; ++ j) {
           	if (list[j] > list[j + 1]) {
               	swap(list[j], list[j + 1]);
             }
         }
-  	}
+  }
  
 }
 ~~~
