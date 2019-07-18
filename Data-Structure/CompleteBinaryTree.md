@@ -13,9 +13,9 @@
 
 >**리스트(배열) 을 통한 완전 이진 트리 구현**
 >
->![완전이진트리](https://github.com/micMalloc/TIL/issues/5#issue-469728646)
+>![완전이진트리](https://github.com/micMalloc/TIL/issues/5)
 >
->![배열완전이진트리](https://github.com/micMalloc/TIL/issues/6#issue-469728952)
+>![배열완전이진트리](https://github.com/micMalloc/TIL/issues/6)
 >
 >~~~markdown
 >* tree[i]의 부모는 a[i / 2]
