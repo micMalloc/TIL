@@ -38,7 +38,7 @@
 </br>
 
 - REST의 구체적인 개념
-  - **HTTP URI (Uniform Resource Identifier)**를 통해 자원을 표현(명시)하고, **HTTP Method - GET, POST, PUT, DELETE** 를 통해 해당 자원에 대한 **CRUD** 동작을 적용하는 것을 의미한다.
+  - **HTTP URI (Uniform Resource Identifier)** 를 통해 자원을 표현(명시)하고, **HTTP Method - GET, POST, PUT, DELETE** 를 통해 해당 자원에 대한 **CRUD** 동작을 적용하는 것을 의미한다.
   - 웹 사이트의 모든 자원(이미지, 텍스트, DB 등)에 고유한 ID인 HTTP URI를 부여한다.
   - **CRUD 동작**
     - POST - 생성
